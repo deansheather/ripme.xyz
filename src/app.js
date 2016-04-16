@@ -62,7 +62,7 @@ app.use('/assets', express.static('public', {
 /*
  * Start Express server.
  */
-var server = app.listen(process.env.OPENSHIFT_NODEJS_PORT || 8080, process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1', function () {
+var server = app.listen((3000, function () {
   debug('App listening on port ' + server.address().port + '.');
 });
 
