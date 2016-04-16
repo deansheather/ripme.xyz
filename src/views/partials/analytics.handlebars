@@ -1,0 +1,10 @@
+{{#if Config.analytics.use}}
+<script type="text/javascript">
+  !function(r,i,p){r.GoogleAnalyticsObject=p;r[p]||(r[p]=function(){
+  (r[p].q=r[p].q||[]).push(arguments)});r[p].l=+new Date;var s=i.createElement('script'),
+  e=i.scripts[0];s.src='//www.google-analytics.com/analytics.js';
+  e.parentNode.insertBefore(s,e)}(window,document,'ga');
+  ga('create', '{{Config.analytics.trackingID}}', 'auto');
+  ga('send', 'pageview');
+</script>
+{{/if}}

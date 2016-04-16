@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>rip</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <meta name="description" content="rip you"/>
+  <meta name="keywords" content="rip r.i.p. r.i.p me"/>
+  <meta property="og:title" content="ripme.xyz"/>
+  <meta property="og:description" content="rip you"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://ripme.xyz"/>
+  <style type="text/css">html,body{height:100%;width:100%;margin:0;padding:0;background-color:#fdfdfd;color:#424242;font-family:Roboto,Arial,sans-serif;display:table;}section{width:100%;display:table-cell;vertical-align:middle;text-align:center;}h1{margin:0 0 10px 0;font-size:6em;font-weight:300;}h2{margin:0 0 20px 0;font-weight:300;}label{font-weight:300;}input[type="text"],input[type="email"]{padding:5px 10px;border:solid 1px #dcdcdc;transition:box-shadow 0.3s,border 0.3s;}input[type="text"]:focus,input[type="text"].focus,input[type="email"]:focus,input[type="email"].focus{border:solid 1px #707070;box-shadow:0 0 5px 1px #969696;}p.help-block{margin:2px 0 0 0;padding:0;font-weight:300;}.help-block.success{color:green;}.help-block.failure{color:red;}</style>
+</head>
+
+<body>
+  <section>
+    <h1 id="rip">rip you</h1>
+  </section>
+
+  <script>
+    // Taken from http://stackoverflow.com/a/901144
+    function getParam(e,n){n||(n=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var r=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)","i"),a=r.exec(n);return a?a[2]?decodeURIComponent(a[2].replace(/\+/g," ")):"":null}
+    var ripee = getParam('rip');
+    if (ripee !== null) {
+      document.getElementById("rip").innerText = document.createTextNode("rip " + ripee + " indeed.").textContent;
+    }
+  </script>
+
+  <script>
+    !function(r,i,p){r.GoogleAnalyticsObject=p;r[p]||(r[p]=function(){
+    (r[p].q=r[p].q||[]).push(arguments)});r[p].l=+new Date;var s=i.createElement('script'),
+    e=i.scripts[0];s.src='//www.google-analytics.com/analytics.js';
+    e.parentNode.insertBefore(s,e)}(window,document,'ga');
+    ga('create', '{{config.analytics.trackingID}}', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
