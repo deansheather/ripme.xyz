@@ -103,8 +103,7 @@ app.use(function (req, res) {
   if (!res.headersSent) {
     res.status(404).render('error', {
       title: '404',
-      message: 'The requested page was not found on our server.',
-      bottomText: 'If you think this is a mistake, try refreshing the page.'
+      message: 'The requested page was not found on our server.'
     });
   }
 });
@@ -118,8 +117,7 @@ app.use(function (err, req, res, next) {
   if (!res.headersSent) {
     res.status(500).render('error', {
       title: '500',
-      message: 'An internal server error occurred.',
-      bottomText: 'If you think this is a mistake, try refreshing the page.'
+      message: 'An internal server error occurred.'
     });
   }
 
