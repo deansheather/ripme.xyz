@@ -102,8 +102,7 @@ app.get('/:ripee', function (req, res) {
 app.use(function (req, res) {
   if (!res.headersSent) {
     res.status(404).render('error', {
-      title: '404',
-      message: 'The requested page was not found on our server.'
+      error: '404: Page not found'
     });
   }
 });
@@ -116,8 +115,7 @@ app.use(function (err, req, res, next) {
 
   if (!res.headersSent) {
     res.status(500).render('error', {
-      title: '500',
-      message: 'An internal server error occurred.'
+      error: '500: An internal server error occurred.'
     });
   }
 
