@@ -102,6 +102,7 @@ app.get('/:ripee', function (req, res) {
 app.use(function (req, res) {
   if (!res.headersSent) {
     res.status(404).render('error', {
+      pageTitle: rip.templates.pageTitles[Math.floor(Math.random() * rip.templates.pageTitles.length)],
       error: '404: Page not found'
     });
   }
@@ -115,6 +116,7 @@ app.use(function (err, req, res, next) {
 
   if (!res.headersSent) {
     res.status(500).render('error', {
+      pageTitle: rip.templates.pageTitles[Math.floor(Math.random() * rip.templates.pageTitles.length)],
       error: '500: An internal server error occurred.'
     });
   }
