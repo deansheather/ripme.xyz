@@ -1,0 +1,38 @@
+{
+  "name": "ripme.xyz",
+  "version": "1.0.0",
+  "description": "Source code for RipMe.xyz homepage. R.I.P.",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "cd src && node app.js",
+    "test": "cd src && mocha ../test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deansheather/ripme.xyz.git"
+  },
+  "keywords": [
+    "rip",
+    "r.i.p.",
+    "r.i.p",
+    "rest",
+    "peace",
+    "restinpeace"
+  ],
+  "author": "Dean Sheather <dean@deansheather.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deansheather/ripme.xyz/issues"
+  },
+  "homepage": "https://github.com/deansheather/ripme.xyz#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "mustache": "^2.2.1"
+  },
+  "devDependencies": {
+    "expect": "^1.16.0",
+    "supertest": "^1.2.0"
+  }
+}
