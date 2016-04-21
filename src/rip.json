@@ -25,10 +25,10 @@
     ],
 
     "withRipeeContent": [
-      "{{{ripee}}} got #rekt",
-      "rip {{{ripee}}} indeed.",
-      "{{{ripee}}} is kill",
-      "rip {{{ripee}}}"
+      "{{ripee}} got #rekt",
+      "rip {{ripee}} indeed.",
+      "{{ripee}} is kill",
+      "rip {{ripee}}"
     ]
   },
 
