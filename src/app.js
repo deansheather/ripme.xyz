@@ -103,7 +103,11 @@ app.use(function (req, res) {
   if (!res.headersSent) {
     res.status(404).render('error', {
       pageTitle: rip.templates.pageTitles[Math.floor(Math.random() * rip.templates.pageTitles.length)],
+      ripText: Mustache.render(rip.templates.withRipeeContent[Math.floor(Math.random() * rip.templates.withRipeeContent.length)], {ripee: 'ripme.xyz'}),
       error: '404: Page not found'
+
+      audio: (req.query.hasOwnProperty('noaudio') ? false : (audioFiles.length > 0 ? '/assets/audio/' + audioFiles[Math.floor(Math.random() * audioFiles.length)] : false)),
+      Config: rip.config
     });
   }
 });
@@ -117,7 +121,11 @@ app.use(function (err, req, res, next) {
   if (!res.headersSent) {
     res.status(500).render('error', {
       pageTitle: rip.templates.pageTitles[Math.floor(Math.random() * rip.templates.pageTitles.length)],
+      ripText: Mustache.render(rip.templates.withRipeeContent[Math.floor(Math.random() * rip.templates.withRipeeContent.length)], {ripee: 'ripme.xyz'}),
       error: '500: An internal server error occurred.'
+
+      audio: (req.query.hasOwnProperty('noaudio') ? false : (audioFiles.length > 0 ? '/assets/audio/' + audioFiles[Math.floor(Math.random() * audioFiles.length)] : false)),
+      Config: rip.config
     });
   }
 
