@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="unsupported-browser">
+<head>
+  <meta charset="utf-8">
+  <title>💀 Ripme.xyz</title>
+
+  <meta name="description" content="rip you">
+  <meta name="keywords" content="rip, discord, r.i.p., ripme, r.i.p. me, rip me, skull, death, coffin, funny, meme, spooky">
+  <meta property="og:title" content="💀 Ripme.xyz">
+  <meta property="og:description" content="rip you">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://ripme.xyz">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+
+  <!-- build:css assets/css/app.min.css -->
+  <link rel="stylesheet" href="assets/css/app.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div class="unsupported-message">
+    <div>
+      <img src="assets/img/skull.png" alt="Skull">
+      <h1>R.I.P. your browser</h1>
+      <h2>Your browser doesn't support new HTML5 and CSS3 technologies needed to pay respects.</h2>
+      <p>Please upgrade your browser for the full afterlife experience.</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div style="max-width: 800px;">
+      <h1 id="quote-content"></h1>
+      <h4 id="quote-source"></h4>
+    </div>
+
+    <p id="audio-info">Now playing:&nbsp;<a href="javascript:void 0" id="song" target="_blank"></a>&nbsp;|&nbsp;<a href="javascript:void 0" id="skip-song">Skip</a>
+    <p class="contrib">Quote suggested by <span id="quote-contrib"></span></p>
+  </div>
+
+  <audio id="audio" style="display: none;" src=""></audio>
+
+  <!-- build:js assets/js/bundle.min.js -->
+  <script src="assets/js/modernizr.min.js"></script>
+  <script src="assets/js/logger.min.js"></script>
+  <script src="assets/js/marked.min.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <!-- endbuild -->
+
+  <script>
+    !function(r,i,p,m,e){r.GoogleAnalyticsObject=p;r[p]||(r[p]=function(){
+    (r[p].q=r[p].q||[]).push(arguments)});r[p].l=+new Date;m=i.createElement('script');
+    e=i.scripts[0];m.src='https://www.google-analytics.com/analytics.js';
+    e.parentNode.insertBefore(m,e)}(window,document,'ga');
+
+    ga('create', 'UA-76479387-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
