@@ -44,7 +44,7 @@ gulp.task('compile:production', function () {
 
   return gulp.src('../*.html')
     .pipe(cdnizer({
-      defaultCDNBase: 'http://ripme-assets.deansheather.netdna-cdn.com/',
+      defaultCDNBase: 'https://ripme-assets-deansheather.netdna-ssl.com/',
       files: [
         'assets/js/app.min.js',
         'assets/css/app.min.css',

@@ -1,8 +1,5 @@
 // Application configuration
 window.config = {
-  // Content base URL
-  cdnBase: "http://ripme-assets.deansheather.netdna-cdn.com/",
-
   // Enable audio?
   audio: true,
 
