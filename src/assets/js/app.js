@@ -64,6 +64,9 @@ setInterval(function () {
 if (getParameterByName('light') !== null) {
   document.body.className += ' light-theme';
 }
+if (getParameterByName('tombstone') !== null) {
+  document.body.className += ' tombstone';
+}
 
 // Hide disabled features on the DOM
 if (!config.audio || getParameterByName('noaudio') !== null) {

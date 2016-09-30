@@ -13,7 +13,8 @@ window.config = {
   audioFiles: [
     ["Haddaway - What Is Love", "https://www.youtube.com/watch?v=HEXWRTEbj1I"],
     ["Rick Astley - Never Gonna Give You Up", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"],
-    ["Sad Violin (Airhorn Remix)", "https://www.youtube.com/watch?v=_1qXQRpF08E"]
+    ["Sad Violin (Airhorn Remix)", "https://www.youtube.com/watch?v=_1qXQRpF08E"],
+    ["TF2 Heavy - You are dead, not big suprise", "https://www.youtube.com/watch?v=0DvSzUKUBlU"]
   ],
 
   /*

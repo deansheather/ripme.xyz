@@ -24,6 +24,14 @@ body.light-theme {
   background-color: #fdfdfd;
   color: #111;
 }
+body.tombstone {
+  background-image: url(../img/tombstone.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+body.tombstone .page-content > div {
+  max-width: 620px;
+}
 
 body > div {
   display: table-cell;
@@ -32,6 +40,9 @@ body > div {
 body > div > div {
   max-width: 600px;
   display: inline-block;
+}
+body > .page-content > div {
+  max-width: 800px;
 }
 
 h1, h4, p {

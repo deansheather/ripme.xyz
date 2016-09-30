@@ -64,9 +64,13 @@ gulp.task('compile:production', function () {
  * Move static files (images, audio...) to dist directory
  */
 gulp.task('copy', function () {
-  return gulp.src(['assets/**/*.png', 'assets/**/*.jpg', 'assets/**/*.gif', 'assets/**/*.mp3'])
+  gulp.src(['assets/**/*.png', 'assets/**/*.jpg', 'assets/**/*.gif', 'assets/**/*.mp3'])
     .pipe(changed('../assets'))
     .pipe(gulp.dest('../assets'));
+
+  return gulp.src('*.txt')
+    .pipe(changed('..'))
+    .pipe(gulp.dest('..'));
 });
 
 /*
@@ -79,5 +83,5 @@ gulp.task('watch:compile', function () {
 });
 
 gulp.task('watch:copy', function () {
-  return gulp.watch(['assets/img/*.*', 'assets/music/*.mp3'], ['copy']);
+  return gulp.watch(['assets/img/*.*', 'assets/music/*.mp3', '*.txt'], ['copy']);
 });

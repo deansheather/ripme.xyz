@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>💀 Ripme.xyz</title>
+
+  <meta name="description" content="rip you">
+  <meta name="keywords" content="rip, discord, r.i.p., ripme, r.i.p. me, rip me, skull, death, coffin, funny, meme, spooky">
+  <meta property="og:title" content="💀 Ripme.xyz">
+  <meta property="og:description" content="rip you">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://ripme.xyz">
+
+  <script type="text/javascript">
+    // Get URI parameters
+    // From http://stackoverflow.com/a/901144
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    function go () {
+      var ripee = window.location.pathname.split('/')[1];
+
+      if (getParameterByName('noaudio') !== null) {
+        return window.location.href = '/?noaudio#' + ripee;
+      }
+      
+      window.location.href = '/#' + ripee;
+    }
+
+    go();
+  </script>
+</head>
+
+<body>
+  <p>If you are not redirected automatically, please click this button to be redirected.</p>
+  <button onclick="go()">Redirect</button>
+</body>
+</html>
