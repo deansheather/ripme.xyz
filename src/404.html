@@ -25,7 +25,7 @@
     }
 
     function go () {
-      var ripee = window.location.pathname.split('/')[1];
+      var ripee = encodeURIComponent(window.location.pathname);
 
       if (getParameterByName('noaudio') !== null) {
         return window.location.href = '/?noaudio#' + ripee;
