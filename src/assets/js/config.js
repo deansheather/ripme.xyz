@@ -12,6 +12,7 @@ window.config = {
     ["Rick Astley - Never Gonna Give You Up", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"],
     ["Sad Violin (Airhorn Remix)", "https://www.youtube.com/watch?v=_1qXQRpF08E"],
     ["TF2 Heavy - You are dead, not big suprise", "https://www.youtube.com/watch?v=0DvSzUKUBlU"]
+    ["Dean's Meme Town", "https://www.youtube.com/watch?v=UkS7stxP1xs"]
   ],
 
   /*
@@ -34,7 +35,8 @@ window.config = {
     ["lol rip", "ZounceX", "@zounce3"],
     ["Wasted.", "Grand Theft Auto V", "PikaDude#5386 on Discord"],
     ["You are a dead man!", "Saxton Hale (TF2)", "@deansheather1"],
-    ["You are dead, not big suprise.", "Heavy (TF2)", "PikaDude#5386 on Discord"]
+    ["You are dead, not big suprise.", "Heavy (TF2)", "PikaDude#5386 on Discord"],
+    ["rekt m9", "DoNotSpamPls™", "@DoNotSpamPls"
   ],
 
   /**
