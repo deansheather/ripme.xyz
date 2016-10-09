@@ -13,6 +13,7 @@ window.config = {
     ["Sad Violin (Airhorn Remix)", "https://www.youtube.com/watch?v=_1qXQRpF08E"],
     ["TF2 Heavy - You are dead, not big suprise", "https://www.youtube.com/watch?v=0DvSzUKUBlU"]
     ["Dean's Meme Town", "https://www.youtube.com/watch?v=UkS7stxP1xs"]
+    ["NOMA - Brain Power", "https://www.youtube.com/watch?v=mj-v6zCnEaw"]
   ],
 
   /*
