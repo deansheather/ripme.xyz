@@ -47,6 +47,7 @@
     e.parentNode.insertBefore(m,e)}(window,document,'ga');
 
     ga('create', 'UA-76479387-1', 'auto');
+    ga('set', 'dimension1', window.location.hash && window.location.hash.length > 1 ? decodeURIComponent(window.location.hash.substr(1)) : '');
     ga('send', 'pageview');
   </script>
 </body>
